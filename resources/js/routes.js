@@ -3,6 +3,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 import AllProduct from './components/AllProduct.vue';
 import CreateProduct from './components/CreateProduct.vue';
 import EditProduct from './components/EditProduct.vue';
+import AllPost from './components/AllPost.vue';
+import CreatePost from './components/CreatePost.vue';
+import EditPost from './components/EditPost.vue';
  
 export const routes = [
     {
@@ -19,6 +22,21 @@ export const routes = [
         name: 'edit',
         path: '/edit/:id',
         component: EditProduct
+    },
+    {
+        name: 'post',
+        path: '/post',
+        component: AllPost
+    },
+    {
+        name: 'createPost',
+        path: '/createPost',
+        component: CreatePost
+    },
+    {
+        name: 'editPost',
+        path: '/editPost/:id',
+        component: EditPost
     }
 ];
 
